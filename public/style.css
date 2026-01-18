@@ -1,0 +1,39 @@
+body {
+  background: #0b6623;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+.table {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  width: 80px;
+  animation: slide 0.4s ease-out;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-20px) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+}

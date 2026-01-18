@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@discord/embedded-app-sdk@latest/dist/discord-sdk.umd.js"></script>
+</head>
+<body>
+  <h1>🃏 Blackjack</h1>
+  <div id="user"></div>
+  <div id="coins"></div>
+
+  <div class="table">
+    <div>
+      <h2>Joueur</h2>
+      <div id="player-cards" class="cards"></div>
+      <div id="player-score"></div>
+    </div>
+    <div>
+      <h2>Dealer</h2>
+      <div id="dealer-cards" class="cards"></div>
+      <div id="dealer-score"></div>
+    </div>
+  </div>
+
+  <button id="new">Nouvelle partie</button>
+  <button id="hit">Tirer</button>
+  <button id="stand">Rester</button>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
